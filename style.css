@@ -5,6 +5,8 @@
 }
 
 
+
+
 .headerpelis {
     display: flex;
     justify-content: space-between;
@@ -26,6 +28,7 @@ h1 {
     margin-left: 20px;
     margin-top: 30px;
     font-size: 40px;
+    
     
 }
 
@@ -56,6 +59,13 @@ i {
     .menu {
       display: none;
     }
+    .container {
+        display: none;
+    }
+
+    .item {
+        margin-top: 100px;
+    }
 }
 
 /* Estilo base para el menú desplegable */
@@ -66,13 +76,14 @@ i {
 .menu2 {
     display: none; /* Ocultar el menú por defecto */
     list-style: none;
-    padding: 0;
+    margin-left: 20px;
   }
   
   /* Estilo para el botón hamburguesa */
 .menu-toggle {
     cursor: pointer;
     display: none; 
+    z-index: 999999;
     
   }
   
@@ -88,7 +99,7 @@ i {
 @media screen and (max-width: 800px) {
 .menu-toggle {
     display: block; /* Mostrar el botón hamburguesa en pantallas pequeñas */
-    
+    margin-left: 120px;
 }
 }
   
@@ -105,7 +116,7 @@ i {
 .menudesplegable:hover .menu2 {
     display: block; /* Mostrar el menú cuando esté activo */
     margin-top: 10px;
-    z-index: 999999;
+    z-index: 999999999999999999;
     }
 
 
@@ -115,9 +126,10 @@ main {
     background-color: black;
 }
 
-video {
+.container {
     width: 100%;
-    height: 635px;
+    min-height: 50%;
+    margin-bottom: 20px;
     background-position: cover;
 }
 
@@ -129,15 +141,15 @@ video {
     justify-items: center;
     z-index: 999;
     align-content: start;
-    padding-bottom: 100px;
-    grid-auto-flow: dense;
-    margin-top: -70px; 
-   }
+    
+    grid-template-columns: repeat (auto-fit, minmax(200px, 1fr));
+    grid-auto-flow: row;
+} 
 
 .item {
     min-height: 300px;
     min-width: 200px;
-    z-index: 9999999999999;
+    
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -168,42 +180,113 @@ video {
     z-index: 999999;
 }
 
-.otrassecciones {
-    display: flex;
-    z-index: 9999;
-    color: white;
-    justify-content: center;
+.item2:hover .masinfo {
+    display: block; /* Mostrar el menú cuando esté activo */
+    margin-top: 10px;
+    z-index: 999999;
+}
+
+.item3:hover .masinfo {
+    display: block; /* Mostrar el menú cuando esté activo */
+    margin-top: 10px;
+    z-index: 999999;
+}
+
+.item4:hover .masinfo {
+    display: block; /* Mostrar el menú cuando esté activo */
+    margin-top: 10px;
+    z-index: 999999;
+}
+
+.item5:hover .masinfo {
+    display: block; /* Mostrar el menú cuando esté activo */
+    margin-top: 10px;
+    z-index: 999999;
+}
+
+.item6:hover .masinfo {
+    display: block; /* Mostrar el menú cuando esté activo */
+    margin-top: 10px;
+    z-index: 999999;
+}
+
+.item7:hover .masinfo {
+    display: block; /* Mostrar el menú cuando esté activo */
+    margin-top: 10px;
+    z-index: 999999;
+}
+
+.item8:hover .masinfo {
+    display: block; /* Mostrar el menú cuando esté activo */
+    margin-top: 10px;
+    z-index: 999999;
+}
+
+.item9:hover .masinfo {
+    display: block; /* Mostrar el menú cuando esté activo */
+    margin-top: 10px;
+    z-index: 999;
+}
+.item2 {
+    background-image: url(Fotos\ películas/pobrescriaturas.jpg.jpg);    
+}
+
+.item3 {
+    background-image: url(Fotos\ películas/pobrescriaturas.jpg.jpg);    
+}
+
+.item4 {
+    background-image: url(Fotos\ películas/pobrescriaturas.jpg.jpg);    
+}
+
+.item5 {
+    background-image: url(Fotos\ películas/pobrescriaturas.jpg.jpg);    
+}
+
+.item6 {
+    background-image: url(Fotos\ películas/pobrescriaturas.jpg.jpg);    
+}
+
+.item7 {
+    background-image: url(Fotos\ películas/pobrescriaturas.jpg.jpg);    
+}
+
+.item8 {
+    background-image: url(Fotos\ películas/pobrescriaturas.jpg.jpg);    
+}
+
+.item9 {
+    background-image: url(Fotos\ películas/pobrescriaturas.jpg.jpg);    
+}
+
+
+#otrassecciones {
+    color: aliceblue;
+    padding: 10px;
+    font-weight: 700;
+    margin-left: 30px;;
 }
 
 
 
-.ayuda {
+
+#ayuda {
     position: fixed;
-    z-index: 99;
+    z-index: 9999999999999;
     height: 40px;
     width: 100px;
     bottom: 40px;
     right: 40px; 
-    background-color: #ffff00; 
+    background-color: #ffff00;
     border-radius: 10%;
     border: 1px solid;
     box-shadow: 5px;
-
 }
 
-.ayuda i {
+#ayuda i {
     color: black;
     font-weight: 800px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
